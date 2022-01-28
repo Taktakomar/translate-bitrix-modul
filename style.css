@@ -1,0 +1,25 @@
+
+/*
+    Modify default Bootstrap modal style
+*/
+.modal-dialog {
+    max-width: 70vw !important;
+}
+.modal-footer{
+    border-top: none !important;
+}
+
+/*
+    Custom CSS style
+*/
+.leftSideContainer, .rightSideContainer{
+    border-radius: 4px;
+    border: 1px solid #e0e0e0;
+    min-height: 500px;
+}
+.languageContainer {
+    border-bottom: 1px solid #e0e0e0;
+}
+.languageTitle{
+    font-weight: 500;
+}
