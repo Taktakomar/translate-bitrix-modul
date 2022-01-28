@@ -14,13 +14,15 @@
 
 
   <!-- Font Awesome CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <!-- Custom CSS/JS -->
   <link rel="stylesheet" href="style.css">
   <script src="app.js"></script>
 
-  
+
 </head>
 
 <body>
@@ -45,17 +47,25 @@
         <!-- Modal Content -->
         <div class="modal-body">
           <div class="container-fluid">
+            <div class="exchangeButtonContainer">
+              <div class="exchangeButton mx-auto text-center">
+                <i class="fas fa-exchange-alt"></i>
+              </div>
+            </div>
             <div class="row">
+
               <div class="col-6 px-0 ">
-                <div class="leftSideContainer m-2">
+                <div class="leftSideContainer d-flex flex-column m-2">
                   <div class="languageContainer py-3 px-3">
                     <h6 class="languageTitle mb-0">
                       Englisch
                     </h6>
                   </div>
-                  
-                  <div class="p-3">
-                    asdasdasd
+
+                  <div class="textInput d-flex flex-grow-1 p-3">
+                    <span class="translateTextarea"  onkeyup="onKeyUP(this)" role="textbox"  aria-placeholder="5-digit zipcode" contenteditable></span>
+                    <span class="textPlaceholder">Text hier eingeben</span>
+                 
                   </div>
                 </div>
 
@@ -68,7 +78,7 @@
                     </h6>
                   </div>
                   <div class="p-3">
-                    <i class="fas fa-exchange-alt"></i>
+                    sadasdasdas
                   </div>
                 </div>
 
