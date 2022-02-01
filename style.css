@@ -9,6 +9,27 @@
     }
 }
 
+@media (min-width: 1040px) {
+    .languageList{
+        width: calc(100% - 1rem);
+    }
+    .exchangeButtonContainer{
+        z-index: 4;
+    }
+
+}
+
+@media (max-width: 1040px) {
+    .languageList{
+        width: calc(200% - 1rem);
+    }
+    .exchangeButtonContainer{
+        z-index: 2;
+    }
+
+
+}
+
 /* Medium devices (tablets, 768px and up) */
 @media (max-width: 767.98px) {
     .modal-dialog {
@@ -22,6 +43,39 @@
 
 *:focus {
     outline: none;
+}
+.flex-1 {
+    flex: 1;
+}
+
+
+
+/* text area auto grow*/
+
+.grow-wrap {
+    display: grid;
+}
+
+.grow-wrap::after {
+    content: attr(data-replicated-value) " ";
+    white-space: pre-wrap;
+    visibility: hidden;
+}
+
+.grow-wrap>textarea {
+    resize: none;
+    overflow: hidden;
+}
+
+.grow-wrap>textarea,
+.grow-wrap::after {
+    font: inherit;
+
+    grid-area: 1 / 1 / 2 / 2;
+}
+::placeholder {
+    font-size: 1.2em;
+    color: rgb(165, 165, 165);
 }
 
 /*
@@ -43,6 +97,9 @@
 
 .languageContainer {
     border-bottom: 1px solid #e0e0e0;
+    height: 50px;
+    display: flex;
+    align-items: center;
 }
 
 .languageTitle {
@@ -56,8 +113,6 @@
     margin-left: auto;
     margin-right: auto;
     width: 100px;
-    z-index: 2;
-
 }
 
 .exchangeButton {
@@ -79,7 +134,6 @@
     line-height: 20px;
     border: none !important;
     min-height: 400px;
-
 }
 
 .activeContainer {
@@ -93,32 +147,36 @@
     font-size: 14px;
 }
 
-/* text area auto grow*/
-
-.grow-wrap {
-    display: grid;
+.languagueButton{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
 }
+.languageList{
+    position: absolute;
+    top: 60px;
+    background: white;
+    height: 448px;
+    border-bottom: 1px solid #27272742;
+    border-left: 1px solid #27272742;
+    border-right: 1px solid #27272742;
+    border-radius: 0px 0px 6px 6px;
+    z-index: 3;
+    left:8px;
 
-.grow-wrap::after {
-    content: attr(data-replicated-value) " ";
-    white-space: pre-wrap;
-    visibility: hidden;
 }
-
-.grow-wrap>textarea {
-    resize: none;
-    overflow: hidden;
+.languageSubtitle{
+    color: #999999;
+    font-size: 14px;
 }
-
-.grow-wrap>textarea,
-.grow-wrap::after {
-    border: 1px solid black;
-    padding: 0.5rem;
-    font: inherit;
-
-    grid-area: 1 / 1 / 2 / 2;
+.languageListSide{
+    border-right: 1px solid #27272742;
 }
-::placeholder {
-    font-size: 1.2em;
-    color: rgb(165, 165, 165);
-  }
+.languageItem{
+    font-size: 15px;
+    cursor: pointer;
+    padding: 10px 5px;
+}
+.languageItem:hover {
+    background-color: #2f485875;
+}
