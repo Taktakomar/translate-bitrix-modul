@@ -160,6 +160,7 @@
     align-items: center;
 }
 .languageList{
+    display: flex;
     position: absolute;
     background: white;
     height: 500px;
@@ -192,9 +193,9 @@
     cursor: pointer;
     font-size: 14px;
 }
-.rightSideContainer > .languageList{
+#rightSideLanguageList > .languageList{
     right: 8px;
 }
-.leftSideContainer > .languageList{
+#leftSideLanguageList > .languageList{
     left: 8px;
 }
