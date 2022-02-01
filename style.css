@@ -101,6 +101,13 @@
     display: flex;
     align-items: center;
 }
+.languageContainerShadow{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #27272742;
+    border-radius: 6px;
+}
 
 .languageTitle {
     font-weight: 500;
@@ -154,16 +161,12 @@
 }
 .languageList{
     position: absolute;
-    top: 60px;
     background: white;
-    height: 448px;
-    border-bottom: 1px solid #27272742;
-    border-left: 1px solid #27272742;
-    border-right: 1px solid #27272742;
-    border-radius: 0px 0px 6px 6px;
+    height: 500px;
+    border: 1px solid #27272742;
+    border-radius: 6px;
     z-index: 3;
-    left:8px;
-
+    top: 8px;
 }
 .languageSubtitle{
     color: #999999;
@@ -179,4 +182,19 @@
 }
 .languageItem:hover {
     background-color: #2f485875;
+}
+.closeButton{
+    align-items: center;
+    display: flex;
+    justify-content: end;
+}
+.closeButtonText{
+    cursor: pointer;
+    font-size: 14px;
+}
+.rightSideContainer > .languageList{
+    right: 8px;
+}
+.leftSideContainer > .languageList{
+    left: 8px;
 }
