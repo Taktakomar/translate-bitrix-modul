@@ -1,4 +1,4 @@
-$(document).ready(function () {
+$(document).ready(function() {
 
     $("#launchModal").click();
     $("#leftSideLanguageList").hide();
@@ -22,21 +22,28 @@ $(document).ready(function () {
 
 function onLanguageButtonClick(element) {
     if (element.id == "leftLanguageButton") {
-        $("#leftSideLanguageList").show(500);
+
+        $("#leftSideLanguageList").show();
+        $("#languageListLeft").addClass("languageactive");
+        $("#languageListLeft").removeClass("languageInactive");
     } else if (element.id == "rightLanguageButton") {
-        $("#rightSideLanguageList").show(500);
+        $("#rightSideLanguageList").show();
+        $("#languageListRight").addClass("languageactive");
+        $("#languageListRight").removeClass("languageInactive");
     }
 }
-$(document).mouseup(function (e) {
+$(document).mouseup(function(e) {
     var containerLeft = $("#leftLanguageButton");
     if (!containerLeft.is(e.target) && containerLeft.has(e.target).length === 0) {
-        $("#leftSideLanguageList").hide(400);
+        $("#leftSideLanguageList").hide();
+        $("#languageListLeft").addClass("languageInactive");
+        $("#languageListLeft").removeClass("languageactive");
     }
 
     var containerRight = $("#rightLanguageButton");
     if (!containerRight.is(e.target) && containerRight.has(e.target).length === 0) {
-        $("#rightSideLanguageList").hide(400);
+        $("#rightSideLanguageList").hide();
+        $("#languageListRight").addClass("languageInactive");
+        $("#languageListRight").removeClass("languageactive");
     }
 });
-
-

@@ -2,231 +2,223 @@
 <html lang="en">
 
 <head>
-  <title>Title</title>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 
-  <!-- Font Awesome CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
 
 
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 
-  <!-- Custom CSS/JS -->
-  <link rel="stylesheet" href="style.css">
-  <script src="app.js"></script>
+    <!-- Custom CSS/JS -->
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
 
-  <!-- google font  -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <!-- google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
 
 
 </head>
 
 <body>
 
-  <div class="main-wrapper d-flex flex-column w-100 h-100">
-    <div class="flex-3 pb-5 px-4 d-flex justify-content-evenly flex-column">
-      <div class="translateHeader ">
-        <div class="d-flex translateLogo align-items-center py-2">
-          <i class="fas ml-2 mr-3 fa-2x fa fa-globe-africa"></i> IBP Übersetzer
-        </div>
-      </div>
-      <div class="container-fluid">
-        <div class="exchangeButtonContainer">
-          <div class="exchangeButton mx-auto text-center">
-            <i class="fas fa-exchange-alt"></i>
-          </div>
-        </div>
-        <div class="row">
-
-          <div class="col-6 px-0 ">
-            <div class="leftSideContainer d-flex flex-column m-2">
-              <div class="languageContainer px-3">
-                <div onclick="onLanguageButtonClick(this)" id="leftLanguageButton" class="languagueButton h-100">
-                  <h6 class="languageTitle mb-0">
-                    Englisch <i class="fas fa-angle-down ml-1"></i>
-                  </h6>
+    <div class="main-wrapper d-flex flex-column w-100 h-100">
+        <div class="flex-3 pb-5 px-4 d-flex justify-content-evenly flex-column">
+            <div class="translateHeader ">
+                <div class="d-flex translateLogo align-items-center py-2">
+                    <i class="fas ml-2 mr-3 fa-2x fa fa-globe-africa"></i> IBP Übersetzer
                 </div>
-              </div>
+            </div>
+            <div class="container-fluid">
+                <div class="exchangeButtonContainer">
+                    <div class="exchangeButton mx-auto text-center">
+                        <i class="fas fa-exchange-alt"></i>
+                    </div>
+                </div>
+                <div class="row">
 
-              <div id="leftSideLanguageList">
-                <div class="languageList flex-column">
-                  <div class="languageContainer d-flex align-items-center px-3">
-                    <div class="languagueButton h-100">
-                      <h6 class="languageTitle mb-0">
-                        Ausgangssprache auswählen <i class="fas fa-angle-down ml-1"></i>
-                      </h6>
-                    </div>
-                    <div class="flex-1 h-100 text-right closeButton">
-                      <span class="closeButtonText">Schliessen</span>
-                    </div>
-                  </div>
-                  <div class="bottomLanguageContainer px-3 pt-3 flex-1 d-flex flex-column">
-                    <p class="pl-1 mb-2 languageSubtitle">Alle Sprachen</p>
-                    <div class="d-flex flex-1">
-                      <div class="flex-1 languageListSide d-flex flex-column">
-                        <div class="languageItem d-flex">
-                          Sprache erkennen
-                          <span class="ml-auto mr-1">
-                            <i class="fas fa-check"></i>
-                          </span>
+                    <div class="col-6 px-0 ">
+                        <div class="leftSideContainer d-flex flex-column m-2">
+                            <div class="languageContainer px-3">
+                                <div onclick="onLanguageButtonClick(this)" id="leftLanguageButton" class="languagueButton h-100">
+                                    <h6 class="languageTitle mb-0">
+                                        Englisch <i class="fas fa-angle-down ml-1"></i>
+                                    </h6>
+                                </div>
+                            </div>
+
+                            <div id="leftSideLanguageList">
+                                <div class="languageList flex-column">
+                                    <div class="languageContainer d-flex align-items-center px-3">
+                                        <div class="languagueButton h-100">
+                                            <h6 class="languageTitle mb-0">
+                                                Ausgangssprache auswählen <i class="fas fa-angle-down ml-1"></i>
+                                            </h6>
+                                        </div>
+                                        <div class="flex-1 h-100 text-right closeButton">
+                                            <span class="closeButtonText">Schliessen</span>
+                                        </div>
+                                    </div>
+                                    <div id="languageListLeft" class="bottomLanguageContainer languageInactive px-3 pt-3 flex-1 d-flex flex-column">
+                                        <p class="pl-1 mb-2 languageSubtitle">Alle Sprachen</p>
+                                        <div class="d-flex flex-1">
+                                            <div class="flex-1 languageListSide d-flex flex-column">
+                                                <div class="languageItem d-flex">
+                                                    Sprache erkennen
+                                                    <span class="ml-auto mr-1">
+                                                      <i class="fas fa-check"></i>
+                                                    </span>
+
+                                                </div>
+                                                <div class="languageItem">Bulgarisch</div>
+                                                <div class="languageItem">Chinesisch</div>
+                                                <div class="languageItem">Dänisch</div>
+                                                <div class="languageItem">Deutsch</div>
+                                                <div class="languageItem">Englisch</div>
+                                                <div class="languageItem">Estnisch</div>
+                                                <div class="languageItem">Finnisch</div>
+                                            </div>
+                                            <div class="pl-2 flex-1 languageListSide">
+                                                <div class="languageItem">Bulgarisch</div>
+                                                <div class="languageItem">Chinesisch</div>
+                                                <div class="languageItem">Dänisch</div>
+                                                <div class="languageItem">Deutsch</div>
+                                                <div class="languageItem">Englisch</div>
+                                                <div class="languageItem">Estnisch</div>
+                                            </div>
+                                            <div class="pl-2 flex-1">
+                                                <div class="languageItem">Bulgarisch</div>
+                                                <div class="languageItem">Chinesisch</div>
+                                                <div class="languageItem">Dänisch</div>
+                                                <div class="languageItem">Deutsch</div>
+                                                <div class="languageItem">Englisch</div>
+                                                <div class="languageItem">Estnisch</div>
+                                                <div class="languageItem">Englisch</div>
+                                                <div class="languageItem">Estnisch</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="textInput d-flex flex-grow-1 p-3">
+                                <form action="#0" class="w-100 h-100">
+                                    <div class="grow-wrap d-flex">
+                                        <div class="flex-1">
+                                            <textarea name="text" placeholder="Text hier eingeben..." id="text" class="translateTextarea " onInput="this.parentNode.dataset.replicatedValue = this.value"></textarea>
+                                        </div>
+
+                                        <div class="clearInputWrapper d-flex justify-content-end">
+                                            <div class="clearInputButton pr-2">
+                                                <i class="fas fa-times"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+
+                            </div>
+
 
                         </div>
-                        <div class="languageItem">Bulgarisch</div>
-                        <div class="languageItem">Chinesisch</div>
-                        <div class="languageItem">Dänisch</div>
-                        <div class="languageItem">Deutsch</div>
-                        <div class="languageItem">Englisch</div>
-                        <div class="languageItem">Estnisch</div>
-                        <div class="languageItem">Finnisch</div>
-                      </div>
-                      <div class="pl-2 flex-1 languageListSide">
-                        <div class="languageItem">Bulgarisch</div>
-                        <div class="languageItem">Chinesisch</div>
-                        <div class="languageItem">Dänisch</div>
-                        <div class="languageItem">Deutsch</div>
-                        <div class="languageItem">Englisch</div>
-                        <div class="languageItem">Estnisch</div>
-                      </div>
-                      <div class="pl-2 flex-1">
-                        <div class="languageItem">Bulgarisch</div>
-                        <div class="languageItem">Chinesisch</div>
-                        <div class="languageItem">Dänisch</div>
-                        <div class="languageItem">Deutsch</div>
-                        <div class="languageItem">Englisch</div>
-                        <div class="languageItem">Estnisch</div>
-                        <div class="languageItem">Englisch</div>
-                        <div class="languageItem">Estnisch</div>
-                      </div>
+
                     </div>
-                  </div>
-                </div>
-              </div>
+                    <div class="col-6 px-0">
+                        <div class="rightSideContainer m-2">
+                            <div class="languageContainer px-3">
+                                <div onclick="onLanguageButtonClick(this)" id="rightLanguageButton" class="languagueButton h-100">
+                                    <h6 class="languageTitle mb-0">
+                                        Deutsch <i class="fas fa-angle-down ml-1"></i>
+                                    </h6>
+                                </div>
+                            </div>
 
-              <div class="textInput d-flex flex-grow-1 p-3">
-                <form action="#0" class="w-100 h-100">
-                  <div class="grow-wrap d-flex">
-                    <div class="flex-1">
-                      <textarea name="text" placeholder="Text hier eingeben..." id="text" class="translateTextarea "
-                      onInput="this.parentNode.dataset.replicatedValue = this.value"></textarea>
-                    </div>
-                  
-                    <div class="clearInputWrapper d-flex justify-content-end">
-                      <div class="clearInputButton pr-2">
-                        <i class="fas fa-times"></i>
-                      </div>
-                    </div>
-                  </div>
-                </form>
+                            <div id="rightSideLanguageList">
+                                <div class="languageList flex-column">
+                                    <div class="languageContainer d-flex align-items-center px-3">
 
-              </div>
+                                        <div class="languagueButton h-100">
+                                            <h6 class="languageTitle mb-0">
+                                                Ausgangssprache auswählen <i class="fas fa-angle-down ml-1"></i>
+                                            </h6>
+                                        </div>
 
+                                        <div class="flex-1 h-100 text-right closeButton">
+                                            <span class="closeButtonText">Schliessen</span>
+                                        </div>
+                                    </div>
+                                    <div id="languageListRight" class="bottomLanguageContainer languageInactive px-3 pt-3 flex-1 d-flex flex-column">
+                                        <p class="pl-1 mb-2 languageSubtitle">Alle Sprachen</p>
+                                        <div class="d-flex flex-1">
+                                            <div class="flex-1 languageListSide d-flex flex-column">
+                                                <div class="languageItem d-flex">
+                                                    Sprache erkennen
+                                                    <span class="ml-auto mr-1">
+                                                      <i class="fas fa-check"></i>
+                                                    </span>
 
-            </div>
+                                                </div>
+                                                <div class="languageItem">Bulgarisch</div>
+                                                <div class="languageItem">Chinesisch</div>
+                                                <div class="languageItem">Dänisch</div>
+                                                <div class="languageItem">Deutsch</div>
+                                                <div class="languageItem">Englisch</div>
+                                                <div class="languageItem">Estnisch</div>
+                                                <div class="languageItem">Finnisch</div>
+                                            </div>
+                                            <div class="pl-2 flex-1 languageListSide">
+                                                <div class="languageItem">Bulgarisch</div>
+                                                <div class="languageItem">Chinesisch</div>
+                                                <div class="languageItem">Dänisch</div>
+                                                <div class="languageItem">Deutsch</div>
+                                                <div class="languageItem">Englisch</div>
+                                                <div class="languageItem">Estnisch</div>
+                                            </div>
+                                            <div class="pl-2 flex-1">
+                                                <div class="languageItem">Bulgarisch</div>
+                                                <div class="languageItem">Chinesisch</div>
+                                                <div class="languageItem">Dänisch</div>
+                                                <div class="languageItem">Deutsch</div>
+                                                <div class="languageItem">Englisch</div>
+                                                <div class="languageItem">Estnisch</div>
+                                                <div class="languageItem">Englisch</div>
+                                                <div class="languageItem">Estnisch</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
 
-          </div>
-          <div class="col-6 px-0">
-            <div class="rightSideContainer m-2">
-              <div class="languageContainer px-3">
-                <div onclick="onLanguageButtonClick(this)" id="rightLanguageButton" class="languagueButton h-100">
-                  <h6 class="languageTitle mb-0">
-                    Deutsch <i class="fas fa-angle-down ml-1"></i>
-                  </h6>
-                </div>
-              </div>
+                            </div>
 
-              <div id="rightSideLanguageList">
-                <div class="languageList flex-column">
-                  <div class="languageContainer d-flex align-items-center px-3">
-
-                    <div class="languagueButton h-100">
-                      <h6 class="languageTitle mb-0">
-                        Ausgangssprache auswählen <i class="fas fa-angle-down ml-1"></i>
-                      </h6>
-                    </div>
-
-                    <div class="flex-1 h-100 text-right closeButton">
-                      <span class="closeButtonText">Schliessen</span>
-                    </div>
-                  </div>
-                  <div class="bottomLanguageContainer px-3 pt-3 flex-1 d-flex flex-column">
-                    <p class="pl-1 mb-2 languageSubtitle">Alle Sprachen</p>
-                    <div class="d-flex flex-1">
-                      <div class="flex-1 languageListSide d-flex flex-column">
-                        <div class="languageItem d-flex">
-                          Sprache erkennen
-                          <span class="ml-auto mr-1">
-                            <i class="fas fa-check"></i>
-                          </span>
-
+                            <div class="p-3">
+                                sadasdasdas
+                            </div>
                         </div>
-                        <div class="languageItem">Bulgarisch</div>
-                        <div class="languageItem">Chinesisch</div>
-                        <div class="languageItem">Dänisch</div>
-                        <div class="languageItem">Deutsch</div>
-                        <div class="languageItem">Englisch</div>
-                        <div class="languageItem">Estnisch</div>
-                        <div class="languageItem">Finnisch</div>
-                      </div>
-                      <div class="pl-2 flex-1 languageListSide">
-                        <div class="languageItem">Bulgarisch</div>
-                        <div class="languageItem">Chinesisch</div>
-                        <div class="languageItem">Dänisch</div>
-                        <div class="languageItem">Deutsch</div>
-                        <div class="languageItem">Englisch</div>
-                        <div class="languageItem">Estnisch</div>
-                      </div>
-                      <div class="pl-2 flex-1">
-                        <div class="languageItem">Bulgarisch</div>
-                        <div class="languageItem">Chinesisch</div>
-                        <div class="languageItem">Dänisch</div>
-                        <div class="languageItem">Deutsch</div>
-                        <div class="languageItem">Englisch</div>
-                        <div class="languageItem">Estnisch</div>
-                        <div class="languageItem">Englisch</div>
-                        <div class="languageItem">Estnisch</div>
-                      </div>
+
                     </div>
-                  </div>
                 </div>
-
-              </div>
-
-              <div class="p-3">
-                sadasdasdas
-              </div>
             </div>
 
-          </div>
         </div>
-      </div>
-
+        <div class="flex-1 d-flex justify-content-center">
+            <div class="translateButton py-3 px-5"> Übersetzen </div>
+        </div>
     </div>
-    <div class="flex-1 d-flex justify-content-center">
-      <div class="translateButton py-3 px-5"> Übersetzen </div>
-    </div>
-  </div>
 
 
 </body>
