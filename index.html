@@ -50,7 +50,6 @@
       <div class="translateHeader ">
         <div class="d-flex translateLogo align-items-center py-2">
           <i class="fas ml-2 mr-3 fa-2x fa fa-globe-africa"></i> IBP Übersetzer
-
         </div>
       </div>
       <div class="container-fluid">
@@ -127,9 +126,17 @@
 
               <div class="textInput d-flex flex-grow-1 p-3">
                 <form action="#0" class="w-100 h-100">
-                  <div class="grow-wrap">
-                    <textarea name="text" placeholder="Text hier eingeben..." id="text" class="translateTextarea"
+                  <div class="grow-wrap d-flex">
+                    <div class="flex-1">
+                      <textarea name="text" placeholder="Text hier eingeben..." id="text" class="translateTextarea "
                       onInput="this.parentNode.dataset.replicatedValue = this.value"></textarea>
+                    </div>
+                  
+                    <div class="clearInputWrapper d-flex justify-content-end">
+                      <div class="clearInputButton pr-2">
+                        <i class="fas fa-times"></i>
+                      </div>
+                    </div>
                   </div>
                 </form>
 
