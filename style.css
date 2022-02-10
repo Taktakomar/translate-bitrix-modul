@@ -274,3 +274,19 @@ body {
     transform: translateY(0px);
     transition: .4s all ease-out;
 }
+
+.inactiveElement {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(40px);
+}
+.activeElement {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0px);
+}
+
+.loadingIndicator{
+    position: absolute;
+    color: #808080;
+}
