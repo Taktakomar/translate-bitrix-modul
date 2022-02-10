@@ -1,3 +1,5 @@
+let degree = 0;
+
 $(document).ready(function() {
 
     $("#launchModal").click();
@@ -18,6 +20,12 @@ $(document).ready(function() {
 
 
 });
+
+function onExchangeClick(){
+    degree += 180;
+    console.log("######");
+    $('.exchangeIcon').css('transform', 'rotateY(' + degree + 'deg)');
+}
 
 
 function onLanguageButtonClick(element) {
